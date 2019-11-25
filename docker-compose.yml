@@ -12,6 +12,11 @@ services:
         ports:
             - "15672:15672"
             - "5672:5672"
+        healthcheck:
+            test: ["CMD", "curl", "-f", "http://localhost:15672"]
+            interval: 30s
+            timeout: 10s
+            retries: 5
         container_name: rabbitmq
         labels:
             NAME: rabbitmq
