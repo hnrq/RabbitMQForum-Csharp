@@ -3,7 +3,7 @@ using RabbitMQ.Client.Events;
 using RabbitMQ.Client;
 using System.Text;
 
-namespace Backend.Models
+namespace MessagingApi.Models
 {
     public class BasicConsumer
     {

@@ -1,7 +1,7 @@
 using System;
 using RabbitMQ.Client;
 
-namespace Backend.Models
+namespace MessagingApi.Models
 {
     public class MessageQueue
     {

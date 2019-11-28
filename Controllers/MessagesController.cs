@@ -46,8 +46,6 @@ namespace MessagingApi.Controllers
                 using (var connection = factory.CreateConnection())
                 using (var channel = connection.CreateModel())
                 {
-                    channel.ExchangeDeclare(exchange: "subject_logs",
-                                            type: "topic");
                     message.Id = _COUNTER.Value;
                     message.CreatedOn = DateTime.Now;
                     var serializerSettings = new JsonSerializerSettings();
